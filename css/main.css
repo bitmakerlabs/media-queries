@@ -5,8 +5,8 @@ body {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.5em 0;
+  font-size: 2em;  /* 32px */
+  margin: 0.5em 0; /* 16px */
 }
 
 p {
@@ -17,7 +17,47 @@ p {
   padding: 1em;
 }
 
+
 .one { background-color: rgb(79, 173, 115); }
 .two { background-color: rgb(219, 80, 122); }
 .three { background-color: rgb(221, 219, 100); }
 .four { background-color: rgb(140, 100, 214); }
+
+
+/****************** MEDIA QUERIES ******************/
+/* Media queries MUST be at the bottom of the document */
+
+@media screen and (min-width: 40em) {
+
+  body {
+    font-size: 1.25em;
+  }
+}
+
+/* A media query is a condition. If the condition is true,
+   then these rules become active. Otherwise, they're ignored. */
+@media screen and (min-width: 48em) {
+  /* The following rules are active at 768px and beyond */
+
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 75em) {
+
+  body {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .boxes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60em; /* 1440px */
+    margin: auto;
+  }
+}
+
+
+
+/* the end */
