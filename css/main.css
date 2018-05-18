@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+  color: #222;
+  font: 1em georgia, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.box {
+  padding: 1em;
+}
+
+.one { background-color: rgb(79, 173, 115); }
+.two { background-color: rgb(219, 80, 122); }
+.three { background-color: rgb(221, 219, 100); }
+.four { background-color: rgb(140, 100, 214); }
